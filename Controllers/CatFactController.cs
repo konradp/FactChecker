@@ -19,6 +19,7 @@ namespace FactChecker.Controllers
         {
             var catFact = await _catFactService.GetCatFact("https://catfact.ninja/fact");
             _catFactService.SaveCatFactToFile(catFact);
+            _catFactService.SaveCatFactToCSV(catFact);
             return catFact;
         }
     }
