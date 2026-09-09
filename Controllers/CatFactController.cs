@@ -18,6 +18,7 @@ namespace FactChecker.Controllers
         public async Task<CatFact> Get()
         {
             var catFact = await _catFactService.GetCatFact("https://catfact.ninja/fact");
+            _catFactService.SaveCatFactToFile(catFact);
             return catFact;
         }
     }
