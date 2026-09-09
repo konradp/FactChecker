@@ -8,12 +8,7 @@ namespace FactChecker
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddHttpClient<Services.CatFactService>();
-            builder.Services.AddScoped<Services.CatFactService>(sp =>
-            { 
-                var httpClient = sp.GetRequiredService<HttpClient>();
-                return new Services.CatFactService(httpClient);
-            });
+            builder.Services.AddHttpClient<Services.ICatFactService, Services.CatFactService>();
 
             var app = builder.Build();
 

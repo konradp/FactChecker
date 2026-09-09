@@ -7,9 +7,9 @@ namespace FactChecker.Controllers
     [Route("[controller]")]
     public class CatFactController : ControllerBase
     {
-        private readonly CatFactService _catFactService;
+        private readonly ICatFactService _catFactService;
 
-        public CatFactController(CatFactService catFactService)
+        public CatFactController(ICatFactService catFactService)
         {
             _catFactService = catFactService;
         }

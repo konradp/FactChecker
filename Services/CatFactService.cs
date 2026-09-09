@@ -2,7 +2,7 @@
 
 namespace FactChecker.Services
 {
-    public class CatFactService
+    public class CatFactService : ICatFactService
     {
         private readonly HttpClient _httpClient;
         private static readonly string OutputTxtPath = Path.Combine(AppContext.BaseDirectory, "catFacts.txt");
