@@ -1,12 +1,11 @@
-# Cat Facts
+# Fact Checker
 
-Cat Facts is a project that provides a simple API to fetch random cat facts. Made for Netwise recruitment process.
+Fact checker is a project that provides a simple API to fetch random cat facts. Made for Netwise recruitment process.
 
 ## Features
 
 - Fetching random cat facts from an external API and returning them to the client.
 - Storing the fetched cat facts in both txt and csv formats.
-
 
 ## Technologies
 
