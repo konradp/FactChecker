@@ -23,7 +23,7 @@ Fact checker is a project that provides a simple API to fetch random cat facts. 
 
 ## API Endpoints
 
-- `GET /Weather/GetCatFact`: Get a random cat fact.
+- `GET /CatFact/GetCatFact`: Get a random cat fact.
 
 ## License
 

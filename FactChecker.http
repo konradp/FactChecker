@@ -1,6 +1,6 @@
 @FactChecker_HostAddress = http://localhost:5149
 
-GET {{FactChecker_HostAddress}}/weatherforecast/
+GET {{FactChecker_HostAddress}}/CatFact/GetCatFact
 Accept: application/json
 
 ###

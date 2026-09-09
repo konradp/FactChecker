@@ -14,7 +14,7 @@ namespace FactChecker.Controllers
             _catFactService = catFactService;
         }
 
-        [HttpGet(Name = "GetCatFact")]
+        [HttpGet("GetCatFact", Name = "GetCatFact")]
         public async Task<CatFact> Get()
         {
             var catFact = await _catFactService.GetCatFact("https://catfact.ninja/fact");
